@@ -25,23 +25,7 @@ struct ComposeView: View {
     var body: some View {
             NavigationStack{
                 VStack{
-                    
-                    Image(uiImage: self.image)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 350, height: 350)
-                        .edgesIgnoringSafeArea(.all)
-                    
-                    
-                    TextEditor(text: $content)
-                        .padding()
-                        .onAppear{
-                            if let memo = memo{
-                                content = memo.content
-                            }
-                        }
-                    
-                    
+                    Spacer()
                     NavigationStack {
                         Button(action: {
                             self.openPhoto = true
@@ -53,10 +37,28 @@ struct ComposeView: View {
                                 ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
                             }
                     
+                    Image(uiImage: self.image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 200)
+//                        .edgesIgnoringSafeArea(.all)
+                    
+                    
+                    TextEditor(text: $content)
+                        .padding()
+                        .onAppear{
+                            if let memo = memo{
+                                content = memo.content
+                            }
+                        }
+                    
+                    
+                   
+                    
                     
                     
                 }
-                .navigationTitle(memo != nil ? "메모편집" : "새메모")
+                .navigationTitle(memo != nil ? "편집" : "새기록")
                 .navigationBarTitleDisplayMode(.inline)
                 
                 //large title 모드는 사용하지 않음

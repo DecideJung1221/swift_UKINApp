@@ -24,6 +24,7 @@ struct MainListView: View {
                         NavigationLink{
                             DetailView(memo: memo)
                         }label:{
+                            
                             MemoCell(memo: memo)
                         }
                         
@@ -32,7 +33,9 @@ struct MainListView: View {
                 }
                 .listStyle(.plain)
                 .navigationTitle("기록")
+                
                 .toolbar{
+                    
                     Button{
                         showComposer = true
                     }label: {

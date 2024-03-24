@@ -28,6 +28,7 @@
 		988E67A72BAFC2B1000102BF /* writeStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A62BAFC2B1000102BF /* writeStartView.swift */; };
 		988E67A92BAFC2CA000102BF /* strangerContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A82BAFC2CA000102BF /* strangerContentListView.swift */; };
 		988E67AB2BAFCC1F000102BF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67AA2BAFCC1F000102BF /* ImagePicker.swift */; };
+		988E67AD2BAFD18D000102BF /* writeThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67AC2BAFD18D000102BF /* writeThemeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		988E67A62BAFC2B1000102BF /* writeStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeStartView.swift; sourceTree = "<group>"; };
 		988E67A82BAFC2CA000102BF /* strangerContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strangerContentListView.swift; sourceTree = "<group>"; };
 		988E67AA2BAFCC1F000102BF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		988E67AC2BAFD18D000102BF /* writeThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeThemeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				988E67A62BAFC2B1000102BF /* writeStartView.swift */,
+				988E67AC2BAFD18D000102BF /* writeThemeView.swift */,
 				988E67A82BAFC2CA000102BF /* strangerContentListView.swift */,
 			);
 			path = Write;
@@ -363,6 +366,7 @@
 				988E67AB2BAFCC1F000102BF /* ImagePicker.swift in Sources */,
 				988E67912BAFBF35000102BF /* MemoCell.swift in Sources */,
 				988E679B2BAFC108000102BF /* extension_Color.swift in Sources */,
+				988E67AD2BAFD18D000102BF /* writeThemeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
