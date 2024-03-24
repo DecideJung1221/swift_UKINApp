@@ -21,6 +21,12 @@
 		988E67952BAFBF6B000102BF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67942BAFBF6B000102BF /* DetailView.swift */; };
 		988E67972BAFBF87000102BF /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67962BAFBF87000102BF /* Memo.swift */; };
 		988E67992BAFBF9E000102BF /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67982BAFBF9E000102BF /* MemoStore.swift */; };
+		988E679B2BAFC108000102BF /* extension_Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E679A2BAFC108000102BF /* extension_Color.swift */; };
+		988E67A12BAFC1D7000102BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A02BAFC1D7000102BF /* ContentView.swift */; };
+		988E67A32BAFC267000102BF /* homeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A22BAFC267000102BF /* homeTabView.swift */; };
+		988E67A52BAFC29A000102BF /* memoryStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A42BAFC29A000102BF /* memoryStartView.swift */; };
+		988E67A72BAFC2B1000102BF /* writeStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A62BAFC2B1000102BF /* writeStartView.swift */; };
+		988E67A92BAFC2CA000102BF /* strangerContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A82BAFC2CA000102BF /* strangerContentListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,12 @@
 		988E67942BAFBF6B000102BF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		988E67962BAFBF87000102BF /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		988E67982BAFBF9E000102BF /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
+		988E679A2BAFC108000102BF /* extension_Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_Color.swift; sourceTree = "<group>"; };
+		988E67A02BAFC1D7000102BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		988E67A22BAFC267000102BF /* homeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTabView.swift; sourceTree = "<group>"; };
+		988E67A42BAFC29A000102BF /* memoryStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoryStartView.swift; sourceTree = "<group>"; };
+		988E67A62BAFC2B1000102BF /* writeStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeStartView.swift; sourceTree = "<group>"; };
+		988E67A82BAFC2CA000102BF /* strangerContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strangerContentListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +158,13 @@
 		988E678A2BAFBECD000102BF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				988E678E2BAFBF07000102BF /* MainListView.swift */,
+				988E679F2BAFC186000102BF /* Write */,
+				988E679E2BAFC176000102BF /* MemoryShow */,
+				988E679C2BAFC16B000102BF /* Home */,
 				988E67902BAFBF35000102BF /* MemoCell.swift */,
 				988E67922BAFBF50000102BF /* ComposeView.swift */,
 				988E67942BAFBF6B000102BF /* DetailView.swift */,
+				988E67A02BAFC1D7000102BF /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +174,7 @@
 			children = (
 				988E67962BAFBF87000102BF /* Memo.swift */,
 				988E67982BAFBF9E000102BF /* MemoStore.swift */,
+				988E679A2BAFC108000102BF /* extension_Color.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -170,6 +186,32 @@
 				988E67662BAFBEAB000102BF /* UkinApp.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		988E679C2BAFC16B000102BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				988E67A22BAFC267000102BF /* homeTabView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		988E679E2BAFC176000102BF /* MemoryShow */ = {
+			isa = PBXGroup;
+			children = (
+				988E678E2BAFBF07000102BF /* MainListView.swift */,
+				988E67A42BAFC29A000102BF /* memoryStartView.swift */,
+			);
+			path = MemoryShow;
+			sourceTree = "<group>";
+		};
+		988E679F2BAFC186000102BF /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				988E67A62BAFC2B1000102BF /* writeStartView.swift */,
+				988E67A82BAFC2CA000102BF /* strangerContentListView.swift */,
+			);
+			path = Write;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,14 +345,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				988E678F2BAFBF07000102BF /* MainListView.swift in Sources */,
+				988E67A12BAFC1D7000102BF /* ContentView.swift in Sources */,
 				988E67952BAFBF6B000102BF /* DetailView.swift in Sources */,
+				988E67A72BAFC2B1000102BF /* writeStartView.swift in Sources */,
 				988E67682BAFBEAB000102BF /* UkinApp.xcdatamodeld in Sources */,
 				988E67992BAFBF9E000102BF /* MemoStore.swift in Sources */,
 				988E67652BAFBEAB000102BF /* Persistence.swift in Sources */,
 				988E675C2BAFBEAA000102BF /* UkinAppApp.swift in Sources */,
+				988E67A32BAFC267000102BF /* homeTabView.swift in Sources */,
+				988E67A92BAFC2CA000102BF /* strangerContentListView.swift in Sources */,
 				988E67972BAFBF87000102BF /* Memo.swift in Sources */,
+				988E67A52BAFC29A000102BF /* memoryStartView.swift in Sources */,
 				988E67932BAFBF50000102BF /* ComposeView.swift in Sources */,
 				988E67912BAFBF35000102BF /* MemoCell.swift in Sources */,
+				988E679B2BAFC108000102BF /* extension_Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
