@@ -27,6 +27,7 @@
 		988E67A52BAFC29A000102BF /* memoryStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A42BAFC29A000102BF /* memoryStartView.swift */; };
 		988E67A72BAFC2B1000102BF /* writeStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A62BAFC2B1000102BF /* writeStartView.swift */; };
 		988E67A92BAFC2CA000102BF /* strangerContentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67A82BAFC2CA000102BF /* strangerContentListView.swift */; };
+		988E67AB2BAFCC1F000102BF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988E67AA2BAFCC1F000102BF /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		988E67A42BAFC29A000102BF /* memoryStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memoryStartView.swift; sourceTree = "<group>"; };
 		988E67A62BAFC2B1000102BF /* writeStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = writeStartView.swift; sourceTree = "<group>"; };
 		988E67A82BAFC2CA000102BF /* strangerContentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = strangerContentListView.swift; sourceTree = "<group>"; };
+		988E67AA2BAFCC1F000102BF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,9 +163,6 @@
 				988E679F2BAFC186000102BF /* Write */,
 				988E679E2BAFC176000102BF /* MemoryShow */,
 				988E679C2BAFC16B000102BF /* Home */,
-				988E67902BAFBF35000102BF /* MemoCell.swift */,
-				988E67922BAFBF50000102BF /* ComposeView.swift */,
-				988E67942BAFBF6B000102BF /* DetailView.swift */,
 				988E67A02BAFC1D7000102BF /* ContentView.swift */,
 			);
 			path = View;
@@ -175,6 +174,7 @@
 				988E67962BAFBF87000102BF /* Memo.swift */,
 				988E67982BAFBF9E000102BF /* MemoStore.swift */,
 				988E679A2BAFC108000102BF /* extension_Color.swift */,
+				988E67AA2BAFCC1F000102BF /* ImagePicker.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -199,6 +199,9 @@
 		988E679E2BAFC176000102BF /* MemoryShow */ = {
 			isa = PBXGroup;
 			children = (
+				988E67902BAFBF35000102BF /* MemoCell.swift */,
+				988E67922BAFBF50000102BF /* ComposeView.swift */,
+				988E67942BAFBF6B000102BF /* DetailView.swift */,
 				988E678E2BAFBF07000102BF /* MainListView.swift */,
 				988E67A42BAFC29A000102BF /* memoryStartView.swift */,
 			);
@@ -357,6 +360,7 @@
 				988E67972BAFBF87000102BF /* Memo.swift in Sources */,
 				988E67A52BAFC29A000102BF /* memoryStartView.swift in Sources */,
 				988E67932BAFBF50000102BF /* ComposeView.swift in Sources */,
+				988E67AB2BAFCC1F000102BF /* ImagePicker.swift in Sources */,
 				988E67912BAFBF35000102BF /* MemoCell.swift in Sources */,
 				988E679B2BAFC108000102BF /* extension_Color.swift in Sources */,
 			);

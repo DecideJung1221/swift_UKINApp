@@ -11,7 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-            Color(Color.customBackgroundsky).ignoresSafeArea()
+//            Color(Color.customBackgroundsky).ignoresSafeArea()
                 if showHomeView {
                     homeTabView(showHomeView: self.$showHomeView)
                 } else {

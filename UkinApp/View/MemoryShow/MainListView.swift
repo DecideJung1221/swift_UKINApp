@@ -14,32 +14,36 @@ struct MainListView: View {
     @State private var showComposer: Bool = false
     
     var body: some View {
-        NavigationView{
-            List{
-                ForEach(store.list){memo in
-                
-                    NavigationLink{
-                        DetailView(memo: memo)
-                    }label:{
-                        MemoCell(memo: memo)
+        ZStack{
+            Color(Color.customBackgroundsky).ignoresSafeArea()
+            
+            NavigationView{
+                List{
+                    ForEach(store.list){memo in
+                        
+                        NavigationLink{
+                            DetailView(memo: memo)
+                        }label:{
+                            MemoCell(memo: memo)
+                        }
+                        
                     }
-                
+//                    .onDelete(perform: store.delete)
                 }
-                .onDelete(perform: store.delete)
-            }
-            .listStyle(.plain)
-            .navigationTitle("내 메모")
-            .toolbar{
-                Button{
-                    showComposer = true
-                }label: {
-                    Image(systemName: "plus")
+                .listStyle(.plain)
+                .navigationTitle("기록")
+                .toolbar{
+                    Button{
+                        showComposer = true
+                    }label: {
+                        Image(systemName: "plus")
+                    }
                 }
+                //새로운 메모를 모달로 표시!
+                .sheet(isPresented: $showComposer, content: {
+                    ComposeView()
+                })
             }
-            //새로운 메모를 모달로 표시!
-            .sheet(isPresented: $showComposer, content: {
-                ComposeView()
-            })
         }
     }
 }

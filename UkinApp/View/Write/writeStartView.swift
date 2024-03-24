@@ -16,7 +16,7 @@ struct writeStartView: View {
     
     var body: some View {
         ZStack{
-            Color(Color.customBackgroundsky).ignoresSafeArea()
+//            Color(Color.customBackgroundsky).ignoresSafeArea()
             VStack{
                 Spacer()
                     .frame(height: 30)
@@ -27,7 +27,7 @@ struct writeStartView: View {
                     .padding()
                 ZStack{
                     RoundedRectangle(cornerRadius: 20)
-                        .fill(.white)
+                        .fill(Color.customBackgroundsky)
                         .frame(width: 350,height: 300)
                     Text("\(contentList[contentnum].content)")
                         .font(.system(size: 28))

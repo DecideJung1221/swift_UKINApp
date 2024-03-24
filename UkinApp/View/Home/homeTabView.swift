@@ -12,7 +12,7 @@ struct homeTabView: View {
     
     var body: some View {
         ZStack{
-            Color(Color.customBackgroundsky).ignoresSafeArea()
+//            Color(Color.customBackgroundsky).ignoresSafeArea()
             TabView {
                 writeStartView()
                     .tabItem {
@@ -22,6 +22,7 @@ struct homeTabView: View {
                 memoryStartView()
                     .tabItem {
                         Label("추억하기", systemImage: "clock.arrow.2.circlepath")
+                            .foregroundColor(.black)
                     }
                     .tag(1)
                 
