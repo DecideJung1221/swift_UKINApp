@@ -13,6 +13,8 @@ struct memoryStartView: View {
     
     
     let persistenceController = PersistenceController.shared
+    
+    
     var body: some View {
         ZStack{
             Color(Color.customBackgroundsky).ignoresSafeArea()

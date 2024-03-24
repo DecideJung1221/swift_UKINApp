@@ -13,9 +13,9 @@ class MemoStore: ObservableObject{
 
     init(){
         list = [
-            Memo(content: "Hello", insertDate: Date.now),
-            Memo(content: "Awesome", insertDate: Date.now.addingTimeInterval(3600 * -24)),
-            Memo(content: "wow", insertDate: Date.now.addingTimeInterval(3600 * -48))
+            Memo(content: "너무~ 즐거웠다", insertDate: Date.now),
+            Memo(content: "새로운 사람을 만나 성장했다", insertDate: Date.now.addingTimeInterval(3600 * -24)),
+            Memo(content: "wowwowowowowowow", insertDate: Date.now.addingTimeInterval(3600 * -48))
             
         ]
     }

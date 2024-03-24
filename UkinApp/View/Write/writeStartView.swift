@@ -11,12 +11,15 @@ struct writeStartView: View {
     
     var contentList: [Contents] = [Content0,Content1,Content2,Content3,Content4,Content5,Content6]
     @State var contentnum: Int = 0
+    @State var showwriteThemeView = false
     
 
     
     var body: some View {
-        ZStack{
-//            Color(Color.customBackgroundsky).ignoresSafeArea()
+        
+        if showwriteThemeView {
+            writeThemeView(showwriteThemeView: self.$showwriteThemeView)
+        }else{
             VStack{
                 Spacer()
                     .frame(height: 30)
@@ -44,7 +47,7 @@ struct writeStartView: View {
                             .font(.largeTitle)
                             .foregroundColor(.black)
                     }).padding()
-                    Button(action: {}, label: {
+                    Button(action: {self.showwriteThemeView = true}, label: {
                         Image(systemName: "checkmark.circle")
                             .imageScale(.medium)
                             .font(.largeTitle)
@@ -52,13 +55,13 @@ struct writeStartView: View {
                     }).padding()
                     Button(action: {
                         contentnum = .random(in: 0...6)
-                      },
-                      label: {
+                    },
+                           label: {
                         Image(systemName: "arrow.clockwise.circle")
                             .imageScale(.medium)
                             .font(.largeTitle)
                             .foregroundColor(.black)
-                      }).padding()
+                    }).padding()
                 }
                 //                모아 캐릭터
                 VStack{

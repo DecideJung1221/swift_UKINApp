@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct writeThemeView: View {
+    @Binding var showwriteThemeView: Bool
+    
     //compose뷰를 사용할 때 이용
     @State private var showComposer: Bool = false
    
@@ -57,6 +59,6 @@ struct writeThemeView: View {
     }
 }
 
-#Preview {
-    writeThemeView()
-}
+//#Preview {
+//    writeThemeView()
+//}

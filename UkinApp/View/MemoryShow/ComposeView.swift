@@ -23,7 +23,7 @@ struct ComposeView: View {
     
     
     var body: some View {
-            NavigationStack{
+        NavigationStack{
                 VStack{
                     Spacer()
                     NavigationStack {
@@ -84,7 +84,7 @@ struct ComposeView: View {
                                 store.update(memo: memo, content: content)
                             }else{
                                 
-                                //                        위의 texteditor의 text를 content로 받음
+                                //위의 texteditor의 text를 content로 받음
                                 store.insert(memo: content)
                             }
                             
